@@ -461,6 +461,7 @@ spec:
         app: loadgenerator
       annotations:
         sidecar.istio.io/rewriteAppHTTPProbers: "true"
+        opflex.cisco.com/endpoint-group: '{"policy-space":"apicTenant","name":"hipster|loadgenerator"}'
     spec:
       terminationGracePeriodSeconds: 5
       restartPolicy: Always
